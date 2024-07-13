@@ -1,0 +1,26 @@
+#container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-family: sans-serif;
+}
+
+#container > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+#container > div {
+  margin-left: 1rem;
+}
+
+#container > div > p:first-child {
+  font-size: larger;
+  line-height: 2rem;
+}
+
+#container > div > p:last-child {
+  font-size: small;
+  color: #64748b;
+}
