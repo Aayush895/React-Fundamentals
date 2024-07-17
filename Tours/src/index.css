@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #f8fafc;
 }
 
 #outer-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8fafc;
-  height: 145vh;
+  height: 100vh;
 }
