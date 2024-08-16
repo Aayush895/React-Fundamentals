@@ -1,0 +1,42 @@
+#questionsContainer {
+  margin-top: 4rem;
+}
+
+#questions {
+  width: 60%;
+  margin: 2rem auto;
+  border: 1px solid lightgray;
+  border-radius: 0.3rem;
+  padding: 0 1rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#questions > p {
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 0.8rem;
+}
+
+#questionCard {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+#questionCard > div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(22, 78, 99, 1);
+  color: #fff;
+  cursor: pointer;
+}
+
