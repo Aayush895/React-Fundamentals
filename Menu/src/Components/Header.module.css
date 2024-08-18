@@ -1,0 +1,9 @@
+#headerContainer {
+  margin-bottom: 1rem;
+}
+
+#headerContainer > h1 {
+  font-weight: 300;
+  font-family: sans-serif;
+  letter-spacing: 0.15rem;
+}

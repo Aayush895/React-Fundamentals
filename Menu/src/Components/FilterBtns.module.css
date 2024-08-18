@@ -1,0 +1,12 @@
+#filterContainer {
+  margin-bottom: 3rem;
+}
+
+#filterContainer > button {
+  margin-left: 1rem;
+  padding: 0.25rem 1rem;
+  background-color: rgba(245, 158, 11, 1);
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+}
