@@ -1,0 +1,10 @@
+#bodyContainer {
+  width: 90%
+}
+
+#bodyContainer > p {
+  display: inline;
+  font-family: sans-serif;
+  line-height: 2;
+  text-align: justify;
+}

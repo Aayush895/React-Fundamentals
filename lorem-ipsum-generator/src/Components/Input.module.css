@@ -1,0 +1,34 @@
+#inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+#inputContainer > input {
+  width: 20%;
+  padding: 0.5rem 0.5rem;
+  background-color: rgba(203, 213, 225, 1);
+  border: none;
+  border-radius: 0.3rem;
+  margin-left: 0.5rem;
+}
+
+#inputContainer > button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  margin-left: 0.5rem;
+  background-color: rgba(16, 185, 129, 1);
+  color: white;
+}
+
+#noPara {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#errorMsg {
+  font-family: sans-serif;
+  color: rgb(250, 100, 100);
+}
