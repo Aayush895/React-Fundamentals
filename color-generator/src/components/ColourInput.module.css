@@ -1,0 +1,27 @@
+#inputContainer {
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+}
+
+#inputContainer > input[type=color] {
+  border: none;
+  background: none;
+  margin-right: 1rem;
+  height: 2.4rem;
+  width: 4rem;
+}
+
+#inputContainer > input[type=text] {
+  padding: 0.3rem 0.5rem;
+  color: gray;
+  border: none;
+  margin-right: 1rem;
+}
+
+#inputContainer > button {
+  padding: 0.3rem 0.5rem;
+  background: rgba(100, 92, 255, 1);
+  color: white;
+  border: none;
+}

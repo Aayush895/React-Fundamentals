@@ -1,0 +1,9 @@
+#bodyContainer {
+  display: flex;
+  margin-top: 3rem;
+}
+
+#colorDiv {
+  height: 7rem;
+  width: 10rem;
+}
