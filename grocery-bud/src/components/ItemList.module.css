@@ -1,0 +1,30 @@
+#itemListContainer {
+  width: 88%;
+  margin: 2rem auto;
+}
+
+#itemList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+#itemList > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#itemList > div > p {
+  margin-left: 0.5rem;
+}
+
+#itemList > button {
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+  background: var(--black);
+}
