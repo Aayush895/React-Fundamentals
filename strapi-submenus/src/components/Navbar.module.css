@@ -1,0 +1,18 @@
+#navContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 0rem;
+}
+
+#navItems > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navItems > ul > li {
+  margin-right: 1.5rem;
+}
