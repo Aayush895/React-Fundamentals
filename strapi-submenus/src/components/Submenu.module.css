@@ -1,0 +1,28 @@
+#submenuContainer {
+  position: absolute;
+  background-color: white;
+  color: #4338CA;
+  padding: 3rem 2.5rem;
+  width: 75%;
+  border-radius: 0.5rem;
+  margin-top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#submenuItems {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+#itemList {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#itemList > p:last-child {
+  margin-left: 0.5rem;
+}
