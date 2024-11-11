@@ -16,4 +16,7 @@
 #navItems > ul > li {
   margin-right: 1.5rem;
   cursor: pointer;
+  display: flex;
+  align-self: stretch;
+  padding: 2rem 0;
 }

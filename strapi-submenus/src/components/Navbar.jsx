@@ -5,15 +5,19 @@ import Submenu from './Submenu'
 
 function Navbar() {
   const [isHidden, setisHidden] = useState(true)
+  const [currPageId, setcurrPageId] = useState(null)
 
-  function showsubMenu() {
+  function showsubMenu(pageId) {
     setisHidden(false)
+    setcurrPageId(pageId)
   }
 
   function hidesubMenu() {
     setisHidden(true)
   }
 
+  console.log(currPageId)
+  console.log(isHidden)
   return (
     <div id={style.navContainer}>
       <div id={style.logo}>
@@ -21,14 +25,18 @@ function Navbar() {
       </div>
       <div id={style.navItems}>
         <ul>
-          <li onMouseEnter={showsubMenu} onMouseLeave={hidesubMenu}>
-            {!isHidden ? (
-              <Submenu header={sublinks[0].page} links={sublinks[0].links} />
-            ) : null}
-            Product
-          </li>
-          <li>Solutions</li>
-          <li>Resources</li>
+          {sublinks.map((sublink) => (
+            <li
+              key={sublink.pageId}
+              onMouseEnter={() => showsubMenu(sublink.pageId)}
+              onMouseLeave={hidesubMenu}
+            >
+              {!isHidden && sublink.pageId == currPageId ? (
+                <Submenu header={sublink.page} links={sublink.links} />
+              ) : null}
+              {sublink.page}
+            </li>
+          ))}
         </ul>
       </div>
     </div>
