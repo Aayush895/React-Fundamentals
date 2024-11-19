@@ -7,11 +7,24 @@ test("should render input component", () => {
 
   const inputDiv = screen.getByTestId("input-div")
   const button = screen.getByRole('button')
-  const emptyElement = screen.getByTestId('empty-element')
-  // const errorElement = screen.getByTestId('error-element')
 
+  // Test for input div to be rendered inside the component
   expect(inputDiv).toBeInTheDocument()
+
+  // Test for empty element
   fireEvent.click(button)
+  const emptyElement = screen.getByTestId('empty-element')
   expect(emptyElement).toBeInTheDocument()
-  // expect(errorElement).toBeInTheDocument()
+
+  // Test for error element
+  const inputField = screen.getByRole("spinbutton")
+  fireEvent.change(inputField, {target: {value: 10}})
+  fireEvent.click(button)
+  const errorElement = screen.getByTestId('error-element')
+  expect(errorElement).toBeInTheDocument()
+
+  // Test for paragraphs to be rendered
+  fireEvent.change(inputField, { target: { value: 5 } })
+  fireEvent.click(button)
+  expect(screen.getByTestId("body-component")).toBeInTheDocument()
 })
