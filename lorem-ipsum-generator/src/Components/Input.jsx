@@ -15,9 +15,9 @@ const Input = () => {
     setisparaGenerated(true)
   }
 
-   return (
+  return (
     <>
-      <div id={styles.inputContainer}>
+      <div id={styles.inputContainer} data-testid="input-div">
         <p>Paragraphs:</p>
         <input
           type="number"
@@ -28,11 +28,17 @@ const Input = () => {
         />
         <button onClick={handleParaGeneration}>Generate</button>
       </div>
-      {(paraNumber < 1 && isparaGenerated) && <p id={styles.noPara}>Para is not generated</p>}
-      {(paraNumber > 9 && isparaGenerated) ? (
-        <p id={styles.errorMsg}>Please enter an appropriate number</p>
+      {paraNumber < 1 && isparaGenerated && (
+        <p id={styles.noPara} data-testid="empty-element">
+          Para is not generated
+        </p>
+      )}
+      {paraNumber > 9 && isparaGenerated ? (
+        <p id={styles.errorMsg} data-testid="error-element">
+          Please enter an appropriate number
+        </p>
       ) : (
-        <Body paraNumber={paraNumber} isparaGenerated={isparaGenerated}/>
+        <Body paraNumber={paraNumber} isparaGenerated={isparaGenerated} />
       )}
     </>
   )
