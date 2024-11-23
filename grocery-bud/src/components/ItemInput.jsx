@@ -30,18 +30,18 @@ function ItemInput() {
 
   return (
     <>
-      <div id={style.inputContainer}>
+      <div id={style.inputContainer} data-testid="item-component">
         <input
           type="text"
           name="input"
           value={itemInput}
           onChange={handleitemInput}
         />
-        <button type="submit" onClick={handleaddItem}>
+        <button type="submit" onClick={handleaddItem} data-testid="add-item-btn">
           Add Item
         </button>
       </div>
-      <ItemList itemList={items} setItems={setItems} />
+      <ItemList setItems={setItems} />
     </>
   )
 }

@@ -25,7 +25,7 @@ function ItemList({ setItems }) {
   }
 
   return (
-    <div id={style.itemListContainer}>
+    <div id={style.itemListContainer} data-testid="item-list">
       {items &&
         items.map((item) => (
           <div key={item.id} id={style.itemList}>
@@ -33,7 +33,6 @@ function ItemList({ setItems }) {
               <input
                 type="checkbox"
                 name="isCompleted"
-                id=""
                 checked={item.completed}
                 onChange={() => handleeditItem(item.id)}
               />
