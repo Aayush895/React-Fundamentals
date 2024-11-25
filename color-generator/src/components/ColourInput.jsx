@@ -15,16 +15,17 @@ const ColourInput = () => {
     const generatedColor = new Values(color)
     setcolorTints(generatedColor.tints(10))
   }
-
+  
   return (
     <>
-      <div id={style.inputContainer}>
+      <div id={style.inputContainer} data-testid="color-input">
         <input
           type="color"
           name="clrInput"
           id="clrInput"
           value={color}
           onChange={handlecolorInput}
+          data-testid="color-picker"
         />
         <input
           type="text"

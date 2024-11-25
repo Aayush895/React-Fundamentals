@@ -4,7 +4,7 @@ import style from './ColourBody.module.css'
 
 const ColourBody = ({ colorTints }) => {
   return (
-    <div id={style.bodyContainer}>
+    <div id={style.bodyContainer} data-testid="color-body">
       {colorTints.length != 0 &&
         colorTints.map((tint) => (
           <div

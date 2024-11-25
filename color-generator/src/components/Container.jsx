@@ -4,7 +4,7 @@ import style from './Container.module.css'
 
 const Container = () => {
   return (
-    <div id={style.outerContainer}>
+    <div id={style.outerContainer} data-testid = "container">
       <Header />
       <ColourInput />
     </div>
