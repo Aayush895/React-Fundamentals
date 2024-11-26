@@ -3,7 +3,7 @@ import styles from './Container.module.css'
 
 const Container = () => {
   return (
-    <div id={styles.container}>
+    <div id={styles.container} data-testid="container">
       <h1>Our Tours</h1>
       <Tours />
     </div>

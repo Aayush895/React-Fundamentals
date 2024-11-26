@@ -2,7 +2,7 @@ import ReactLoading from 'react-loading'
 import styles from './Loading.module.css'
 const Loading = () => {
   return (
-    <div id={styles.container}>
+    <div id={styles.container} data-testid = "loading">
       <ReactLoading
         type={'spinningBubbles'}
         color={'#03fc4e'}

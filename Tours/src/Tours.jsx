@@ -28,7 +28,7 @@ const Tours = () => {
   }
 
   return (
-    <div id={styles.toursContainer}>
+    <div id={styles.toursContainer} data-testid="tours-component">
       {isLoading ? (
         <Loading />
       ) : (
